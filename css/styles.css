@@ -1,0 +1,124 @@
+body,h1,h2,h3,h4,h5,h6 {
+      font-family: "Verdana", sans-serif;
+    }
+
+body {
+	background-color: #ffdeb5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	/*margin-top: 80px; */
+	text-align: center;
+	color: #7f5837;
+	font-size: 32px;
+	margin-bottom: 60px; 
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.input-container {
+	display: flex;
+	justify-content: center;
+	height: 40px;
+}
+
+input, button {
+	border: none;
+	outline: none;
+}
+
+.input-container input {
+	padding: 18px 15px;
+	font-size: 18px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	width: 300px;
+}
+
+.input-container button {
+	cursor: pointer;
+	padding: 11px 20px;
+	font-size: 18px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	color: #654321;
+	background-color: #fff;
+	border-left: 2px solid #eee;
+}
+
+.input-container button:hover {
+	color: #fff;
+	background-color: #654321;
+}
+
+.todo-container {
+	margin-top: 40px;
+	text-align: left;
+	padding: 0;
+	width: 500px;
+}
+
+.todo-container .todo {
+	margin-top: 0 auto;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	background-color: #fff;
+	border-radius: 7px;
+}
+
+.todo-container .todo.completed {
+	width: 90%;
+	text-decoration: line-through;
+	color: #7e7e7e;
+	opacity: 0.7;
+}
+
+.todo-container button {
+	padding: 16px;
+	flex: 1;
+	margin: 0;
+}
+
+.todo-container .todo-check {
+	color: #05cf5b;
+	background-color: #fff;
+	border-left: 2px solid #fff;
+	font-size: 16px;
+}
+
+.todo-container .todo-check:hover {
+	color: #fff;
+	background-color: #05cf5b;
+	cursor: pointer;
+}
+
+.todo-container .todo-delete {
+	color: #ff5762;
+	background-color: #fff;
+	font-size: 16px;
+	border-left: 2px solid #eee;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.todo-container .todo-delete:hover {
+	color: #fff;
+	background-color: #ff5762;
+	cursor: pointer;
+}
+
+.todo-container .todo li {
+	flex: 10;
+	padding: 16px;
+	list-style-type: none;
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.5;
+}
